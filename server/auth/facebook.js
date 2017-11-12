@@ -43,7 +43,7 @@ if (!process.env.FACEBOOK_APP_ID || !process.env.FACEBOOK_APP_SECRET) {
   router.get(
     '/verify',
     passport.authenticate('facebook', {
-      successRedirect: '/products',
+      successRedirect: '/home',
       failureRedirect: '/login'
     })
   );

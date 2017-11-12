@@ -11,10 +11,16 @@ class Sour extends Component {
               <div key={match.id}>
                 <div>
                   <h1>{`${i + 1}. ${match.name}`}</h1>
-                  <img src={match.image_url} />
-                  <h3>{`rating: ${match.rating}`}</h3>
-                  <h3>{`phone: ${match.display_phone}`}</h3>
-                  <h3>{`price: ${match.price}`}</h3>
+                  <a href={match.url}>
+                    <img src={match.image_url} />
+                  </a>
+                  <h3>{`Rating: ${match.rating}`}</h3>
+                  <h3>{`Phone: ${match.display_phone}`}</h3>
+                  <h3>{`Price: ${match.price}`}</h3>
+                  <a href={match.url}>
+                    <h3
+                    >{`Check out the ${match.review_count} reviews on Yelp`}</h3>
+                  </a>
                 </div>
               </div>
             ))}
