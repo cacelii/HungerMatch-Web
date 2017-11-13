@@ -8,9 +8,9 @@ const AuthForm = props => {
   const { name, displayName, handleSubmit, error, match } = props;
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} name={name}>
-        <div>
+    <div className="center">
+      <form onSubmit={handleSubmit} name={name} className="formInput">
+        <div className="formInput">
           {match.path === '/signup' && (
             <div>
               <label htmlFor="name">Name</label>
@@ -30,7 +30,9 @@ const AuthForm = props => {
             <input name="password" type="password" />
           </div>
           <div>
-            <button type="submit">{displayName}</button>
+            <button className="login" type="submit">
+              {displayName}
+            </button>
           </div>
           {error && error.response && <div> {error.response.data} </div>}
         </div>

@@ -12,10 +12,66 @@ body {
   nav a {
     display: inline-block;
     margin: 1em;
+    text-align: center;
   }
 
   form div {
     margin: 1em;
     display: inline-block;
+  }
+
+  button {
+    width: 7em;
+    height: 4em;
+    margin: 1em 3em 3em 3em;
+    border-radius: 2em;
+    font-size: 1em;
+    background-color: powderblue;
+  }
+
+  .craving {
+    color: maroon;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .login {
+    width: 5em;
+    height: 2em;
+    border-radius: 1em;
+    font-size: 1em;
+    background-color: lightpink;
+  }
+
+  .formInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social {
+    padding: 20px;
+    font-size: 3em;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .socialText {
+    padding-left: 1em;
+    font-size: 1.5em;
+  }
+
+  .facebook {
+    color: #3b5998;
+  }
+
+  .google {
+    color: red;
   }
 }

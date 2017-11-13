@@ -8,9 +8,9 @@ export const UserHome = props => {
 
   return (
     <div>
-      <h1>Welcome, {name ? name : email}</h1>
-      <h1>What are you craving?</h1>
-      <div>
+      <h1 className="center">Welcome, {name ? name : email}</h1>
+      <h1 className="craving center">What are you craving?</h1>
+      <div className="center">
         <Link to="/spicy">
           <button>Spicy</button>
         </Link>

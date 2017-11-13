@@ -15,8 +15,8 @@ const Main = props => {
 
   return (
     <div>
-      <h1>HungerMatch</h1>
-      <nav>
+      <h1 className="center">HungerMatch</h1>
+      <nav className="center">
         {isLoggedIn ? (
           <div>
             {/* The navbar will show these links after you log in */}
