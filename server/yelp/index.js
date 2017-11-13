@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 router.get('/spicy', (req, res, next) => {
   request({
     uri:
-      'https://api.yelp.com/v3/businesses/search?term=spicy&location=newyork&sort_by=distance&price=1,2&limit=3',
+      'https://api.yelp.com/v3/businesses/search?term=spicy&location=10004&sort_by=distance&price=1,2&limit=3',
     headers: {
       Authorization:
         'Bearer eqoQjEGRM7r4EOcUnLI_5nMa7vUxGH-8xErxncoRNYATJZfGyfRh8UQoHyNVCbtphTVK8Wv_ZzMVdIImilP2RCDOWAfaVX8bGB8kSS-uhPIXEIlf-J4lFNQl7BTyWXYx'
@@ -25,7 +25,7 @@ router.get('/spicy', (req, res, next) => {
 
 router.get('/sweet', (req, res, next) => {
   request({
-    uri: `https://api.yelp.com/v3/businesses/search?term=sweet&location=newyork&limit=3`,
+    uri: `https://api.yelp.com/v3/businesses/search?term=sweet&location=10004&limit=3`,
     headers: {
       Authorization:
         'Bearer eqoQjEGRM7r4EOcUnLI_5nMa7vUxGH-8xErxncoRNYATJZfGyfRh8UQoHyNVCbtphTVK8Wv_ZzMVdIImilP2RCDOWAfaVX8bGB8kSS-uhPIXEIlf-J4lFNQl7BTyWXYx'
@@ -36,7 +36,7 @@ router.get('/sweet', (req, res, next) => {
 router.get('/salty', (req, res, next) => {
   request({
     uri:
-      'https://api.yelp.com/v3/businesses/search?term=saltyfood&location=newyork&limit=3',
+      'https://api.yelp.com/v3/businesses/search?term=saltyfood&location=10004&limit=3',
     headers: {
       Authorization:
         'Bearer eqoQjEGRM7r4EOcUnLI_5nMa7vUxGH-8xErxncoRNYATJZfGyfRh8UQoHyNVCbtphTVK8Wv_ZzMVdIImilP2RCDOWAfaVX8bGB8kSS-uhPIXEIlf-J4lFNQl7BTyWXYx'
@@ -47,7 +47,7 @@ router.get('/salty', (req, res, next) => {
 router.get('/sour', (req, res, next) => {
   request({
     uri:
-      'https://api.yelp.com/v3/businesses/search?term=sour&location=newyork&limit=3',
+      'https://api.yelp.com/v3/businesses/search?term=sour&location=10004&limit=3',
     headers: {
       Authorization:
         'Bearer eqoQjEGRM7r4EOcUnLI_5nMa7vUxGH-8xErxncoRNYATJZfGyfRh8UQoHyNVCbtphTVK8Wv_ZzMVdIImilP2RCDOWAfaVX8bGB8kSS-uhPIXEIlf-J4lFNQl7BTyWXYx'
@@ -58,7 +58,7 @@ router.get('/sour', (req, res, next) => {
 router.get('/umami', (req, res, next) => {
   request({
     uri:
-      'https://api.yelp.com/v3/businesses/search?term=savory&location=newyork&limit=3',
+      'https://api.yelp.com/v3/businesses/search?term=savory&location=10004&limit=3',
     headers: {
       Authorization:
         'Bearer eqoQjEGRM7r4EOcUnLI_5nMa7vUxGH-8xErxncoRNYATJZfGyfRh8UQoHyNVCbtphTVK8Wv_ZzMVdIImilP2RCDOWAfaVX8bGB8kSS-uhPIXEIlf-J4lFNQl7BTyWXYx'

@@ -3,15 +3,12 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-/**
- * COMPONENT
- */
 export const UserHome = props => {
-  const { email } = props;
+  const { name, email } = props;
 
   return (
     <div>
-      <h1>Welcome, {email}</h1>
+      <h1>Welcome, {name ? name : email}</h1>
       <h1>What are you craving?</h1>
       <div>
         <Link to="/spicy">
@@ -34,20 +31,16 @@ export const UserHome = props => {
   );
 };
 
-/**
- * CONTAINER
- */
 const mapState = state => {
   return {
+    name: state.user.name,
     email: state.user.email
   };
 };
 
 export default connect(mapState)(UserHome);
 
-/**
- * PROP TYPES
- */
 UserHome.propTypes = {
+  name: PropTypes.string,
   email: PropTypes.string
 };
